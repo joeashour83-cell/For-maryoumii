@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Heart Flower</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+    height: 500px;
+}
+
+/* الساق */
+.stem {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 0;
+    background: green;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation: grow 4s forwards;
+}
+
+@keyframes grow {
+    from {height:0;}
+    to {height:400px;}
+}
+
+/* القلوب */
+.heart {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg) scale(0);
+    animation: bloom 1s forwards;
+}
+
+.heart:before,
+.heart:after {
+    content:"";
+    position:absolute;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.heart:before {
+    top:-35px;
+    left:0;
+}
+
+.heart:after {
+    left:35px;
+    top:0;
+}
+
+/* شكل القلب */
+.heart {
+    background:var(--color);
+}
+
+.heart:before,
+.heart:after {
+    background:var(--color);
+}
+
+
+@keyframes bloom {
+    to {
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+
+/* أماكن القلوب */
+.h1 {bottom:350px; left:70px; --color:#ff4d88; animation-delay:3s;}
+.h2 {bottom:270px; left:0; --color:#ffcc00; animation-delay:2.5s;}
+.h3 {bottom:220px; left:110px; --color:#8a2be2; animation-delay:2s;}
+.h4 {bottom:150px; left:20px; --color:#00bfff; animation-delay:1.5s;}
+.h5 {bottom:90px; left:100px; --color:#ff6600; animation-delay:1s;}
+
+.leaf {
+    position:absolute;
+    width:50px;
+    height:20px;
+    background:green;
+    border-radius:100% 0;
+    left:40px;
+    opacity:0;
+    animation: leaf 1s forwards 3s;
+}
+
+@keyframes leaf {
+    to {opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flower">
+
+<div class="stem"></div>
+
+<div class="heart h1"></div>
+<div class="heart h2"></div>
+<div class="heart h3"></div>
+<div class="heart h4"></div>
+<div class="heart h5"></div>
+
+<div class="leaf" style="bottom:200px;"></div>
+
+</div>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Heart Flower</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+    height: 500px;
+}
+
+/* الساق */
+.stem {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 0;
+    background: green;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation: grow 4s forwards;
+}
+
+@keyframes grow {
+    from {height:0;}
+    to {height:400px;}
+}
+
+/* القلوب */
+.heart {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg) scale(0);
+    animation: bloom 1s forwards;
+}
+
+.heart:before,
+.heart:after {
+    content:"";
+    position:absolute;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.heart:before {
+    top:-35px;
+    left:0;
+}
+
+.heart:after {
+    left:35px;
+    top:0;
+}
+
+/* شكل القلب */
+.heart {
+    background:var(--color);
+}
+
+.heart:before,
+.heart:after {
+    background:var(--color);
+}
+
+
+@keyframes bloom {
+    to {
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+
+/* أماكن القلوب */
+.h1 {bottom:350px; left:70px; --color:#ff4d88; animation-delay:3s;}
+.h2 {bottom:270px; left:0; --color:#ffcc00; animation-delay:2.5s;}
+.h3 {bottom:220px; left:110px; --color:#8a2be2; animation-delay:2s;}
+.h4 {bottom:150px; left:20px; --color:#00bfff; animation-delay:1.5s;}
+.h5 {bottom:90px; left:100px; --color:#ff6600; animation-delay:1s;}
+
+.leaf {
+    position:absolute;
+    width:50px;
+    height:20px;
+    background:green;
+    border-radius:100% 0;
+    left:40px;
+    opacity:0;
+    animation: leaf 1s forwards 3s;
+}
+
+@keyframes leaf {
+    to {opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flower">
+
+<div class="stem"></div>
+
+<div class="heart h1"></div>
+<div class="heart h2"></div>
+<div class="heart h3"></div>
+<div class="heart h4"></div>
+<div class="heart h5"></div>
+
+<div class="leaf" style="bottom:200px;"></div>
+
+</div>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Heart Flower</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+    height: 500px;
+}
+
+/* الساق */
+.stem {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 0;
+    background: green;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation: grow 4s forwards;
+}
+
+@keyframes grow {
+    from {height:0;}
+    to {height:400px;}
+}
+
+/* القلوب */
+.heart {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg) scale(0);
+    animation: bloom 1s forwards;
+}
+
+.heart:before,
+.heart:after {
+    content:"";
+    position:absolute;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.heart:before {
+    top:-35px;
+    left:0;
+}
+
+.heart:after {
+    left:35px;
+    top:0;
+}
+
+/* شكل القلب */
+.heart {
+    background:var(--color);
+}
+
+.heart:before,
+.heart:after {
+    background:var(--color);
+}
+
+
+@keyframes bloom {
+    to {
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+
+/* أماكن القلوب */
+.h1 {bottom:350px; left:70px; --color:#ff4d88; animation-delay:3s;}
+.h2 {bottom:270px; left:0; --color:#ffcc00; animation-delay:2.5s;}
+.h3 {bottom:220px; left:110px; --color:#8a2be2; animation-delay:2s;}
+.h4 {bottom:150px; left:20px; --color:#00bfff; animation-delay:1.5s;}
+.h5 {bottom:90px; left:100px; --color:#ff6600; animation-delay:1s;}
+
+.leaf {
+    position:absolute;
+    width:50px;
+    height:20px;
+    background:green;
+    border-radius:100% 0;
+    left:40px;
+    opacity:0;
+    animation: leaf 1s forwards 3s;
+}
+
+@keyframes leaf {
+    to {opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flower">
+
+<div class="stem"></div>
+
+<div class="heart h1"></div>
+<div class="heart h2"></div>
+<div class="heart h3"></div>
+<div class="heart h4"></div>
+<div class="heart h5"></div>
+
+<div class="leaf" style="bottom:200px;"></div>
+
+</div>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Heart Flower</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+    height: 500px;
+}
+
+/* الساق */
+.stem {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 0;
+    background: green;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation: grow 4s forwards;
+}
+
+@keyframes grow {
+    from {height:0;}
+    to {height:400px;}
+}
+
+/* القلوب */
+.heart {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg) scale(0);
+    animation: bloom 1s forwards;
+}
+
+.heart:before,
+.heart:after {
+    content:"";
+    position:absolute;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.heart:before {
+    top:-35px;
+    left:0;
+}
+
+.heart:after {
+    left:35px;
+    top:0;
+}
+
+/* شكل القلب */
+.heart {
+    background:var(--color);
+}
+
+.heart:before,
+.heart:after {
+    background:var(--color);
+}
+
+
+@keyframes bloom {
+    to {
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+
+/* أماكن القلوب */
+.h1 {bottom:350px; left:70px; --color:#ff4d88; animation-delay:3s;}
+.h2 {bottom:270px; left:0; --color:#ffcc00; animation-delay:2.5s;}
+.h3 {bottom:220px; left:110px; --color:#8a2be2; animation-delay:2s;}
+.h4 {bottom:150px; left:20px; --color:#00bfff; animation-delay:1.5s;}
+.h5 {bottom:90px; left:100px; --color:#ff6600; animation-delay:1s;}
+
+.leaf {
+    position:absolute;
+    width:50px;
+    height:20px;
+    background:green;
+    border-radius:100% 0;
+    left:40px;
+    opacity:0;
+    animation: leaf 1s forwards 3s;
+}
+
+@keyframes leaf {
+    to {opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flower">
+
+<div class="stem"></div>
+
+<div class="heart h1"></div>
+<div class="heart h2"></div>
+<div class="heart h3"></div>
+<div class="heart h4"></div>
+<div class="heart h5"></div>
+
+<div class="leaf" style="bottom:200px;"></div>
+
+</div>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Heart Flower</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+    height: 500px;
+}
+
+/* الساق */
+.stem {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 0;
+    background: green;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation: grow 4s forwards;
+}
+
+@keyframes grow {
+    from {height:0;}
+    to {height:400px;}
+}
+
+/* القلوب */
+.heart {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg) scale(0);
+    animation: bloom 1s forwards;
+}
+
+.heart:before,
+.heart:after {
+    content:"";
+    position:absolute;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.heart:before {
+    top:-35px;
+    left:0;
+}
+
+.heart:after {
+    left:35px;
+    top:0;
+}
+
+/* شكل القلب */
+.heart {
+    background:var(--color);
+}
+
+.heart:before,
+.heart:after {
+    background:var(--color);
+}
+
+
+@keyframes bloom {
+    to {
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+
+/* أماكن القلوب */
+.h1 {bottom:350px; left:70px; --color:#ff4d88; animation-delay:3s;}
+.h2 {bottom:270px; left:0; --color:#ffcc00; animation-delay:2.5s;}
+.h3 {bottom:220px; left:110px; --color:#8a2be2; animation-delay:2s;}
+.h4 {bottom:150px; left:20px; --color:#00bfff; animation-delay:1.5s;}
+.h5 {bottom:90px; left:100px; --color:#ff6600; animation-delay:1s;}
+
+.leaf {
+    position:absolute;
+    width:50px;
+    height:20px;
+    background:green;
+    border-radius:100% 0;
+    left:40px;
+    opacity:0;
+    animation: leaf 1s forwards 3s;
+}
+
+@keyframes leaf {
+    to {opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flower">
+
+<div class="stem"></div>
+
+<div class="heart h1"></div>
+<div class="heart h2"></div>
+<div class="heart h3"></div>
+<div class="heart h4"></div>
+<div class="heart h5"></div>
+
+<div class="leaf" style="bottom:200px;"></div>
+
+</div>
+
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Heart Flower</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+    height: 500px;
+}
+
+/* الساق */
+.stem {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 0;
+    background: green;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation: grow 4s forwards;
+}
+
+@keyframes grow {
+    from {height:0;}
+    to {height:400px;}
+}
+
+/* القلوب */
+.heart {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg) scale(0);
+    animation: bloom 1s forwards;
+}
+
+.heart:before,
+.heart:after {
+    content:"";
+    position:absolute;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.heart:before {
+    top:-35px;
+    left:0;
+}
+
+.heart:after {
+    left:35px;
+    top:0;
+}
+
+/* شكل القلب */
+.heart {
+    background:var(--color);
+}
+
+.heart:before,
+.heart:after {
+    background:var(--color);
+}
+
+
+@keyframes bloom {
+    to {
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+
+/* أماكن القلوب */
+.h1 {bottom:350px; left:70px; --color:#ff4d88; animation-delay:3s;}
+.h2 {bottom:270px; left:0; --color:#ffcc00; animation-delay:2.5s;}
+.h3 {bottom:220px; left:110px; --color:#8a2be2; animation-delay:2s;}
+.h4 {bottom:150px; left:20px; --color:#00bfff; animation-delay:1.5s;}
+.h5 {bottom:90px; left:100px; --color:#ff6600; animation-delay:1s;}
+
+.leaf {
+    position:absolute;
+    width:50px;
+    height:20px;
+    background:green;
+    border-radius:100% 0;
+    left:40px;
+    opacity:0;
+    animation: leaf 1s forwards 3s;
+}
+
+@keyframes leaf {
+    to {opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flower">
+
+<div class="stem"></div>
+
+<div class="heart h1"></div>
+<div class="heart h2"></div>
+<div class="heart h3"></div>
+<div class="heart h4"></div>
+<div class="heart h5"></div>
+
+<div class="leaf" style="bottom:200px;"></div>
+
+</div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Heart Flower</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+    height: 500px;
+}
+
+/* الساق */
+.stem {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 0;
+    background: green;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation: grow 4s forwards;
+}
+
+@keyframes grow {
+    from {height:0;}
+    to {height:400px;}
+}
+
+/* القلوب */
+.heart {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg) scale(0);
+    animation: bloom 1s forwards;
+}
+
+.heart:before,
+.heart:after {
+    content:"";
+    position:absolute;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.heart:before {
+    top:-35px;
+    left:0;
+}
+
+.heart:after {
+    left:35px;
+    top:0;
+}
+
+/* شكل القلب */
+.heart {
+    background:var(--color);
+}
+
+.heart:before,
+.heart:after {
+    background:var(--color);
+}
+
+
+@keyframes bloom {
+    to {
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+
+/* أماكن القلوب */
+.h1 {bottom:350px; left:70px; --color:#ff4d88; animation-delay:3s;}
+.h2 {bottom:270px; left:0; --color:#ffcc00; animation-delay:2.5s;}
+.h3 {bottom:220px; left:110px; --color:#8a2be2; animation-delay:2s;}
+.h4 {bottom:150px; left:20px; --color:#00bfff; animation-delay:1.5s;}
+.h5 {bottom:90px; left:100px; --color:#ff6600; animation-delay:1s;}
+
+.leaf {
+    position:absolute;
+    width:50px;
+    height:20px;
+    background:green;
+    border-radius:100% 0;
+    left:40px;
+    opacity:0;
+    animation: leaf 1s forwards 3s;
+}
+
+@keyframes leaf {
+    to {opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flower">
+
+<div class="stem"></div>
+
+<div class="heart h1"></div>
+<div class="heart h2"></div>
+<div class="heart h3"></div>
+<div class="heart h4"></div>
+<div class="heart h5"></div>
+
+<div class="leaf" style="bottom:200px;"></div>
+
+</div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Heart Flower</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+    height: 500px;
+}
+
+/* الساق */
+.stem {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 0;
+    background: green;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation: grow 4s forwards;
+}
+
+@keyframes grow {
+    from {height:0;}
+    to {height:400px;}
+}
+
+/* القلوب */
+.heart {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg) scale(0);
+    animation: bloom 1s forwards;
+}
+
+.heart:before,
+.heart:after {
+    content:"";
+    position:absolute;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.heart:before {
+    top:-35px;
+    left:0;
+}
+
+.heart:after {
+    left:35px;
+    top:0;
+}
+
+/* شكل القلب */
+.heart {
+    background:var(--color);
+}
+
+.heart:before,
+.heart:after {
+    background:var(--color);
+}
+
+
+@keyframes bloom {
+    to {
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+
+/* أماكن القلوب */
+.h1 {bottom:350px; left:70px; --color:#ff4d88; animation-delay:3s;}
+.h2 {bottom:270px; left:0; --color:#ffcc00; animation-delay:2.5s;}
+.h3 {bottom:220px; left:110px; --color:#8a2be2; animation-delay:2s;}
+.h4 {bottom:150px; left:20px; --color:#00bfff; animation-delay:1.5s;}
+.h5 {bottom:90px; left:100px; --color:#ff6600; animation-delay:1s;}
+
+.leaf {
+    position:absolute;
+    width:50px;
+    height:20px;
+    background:green;
+    border-radius:100% 0;
+    left:40px;
+    opacity:0;
+    animation: leaf 1s forwards 3s;
+}
+
+@keyframes leaf {
+    to {opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flower">
+
+<div class="stem"></div>
+
+<div class="heart h1"></div>
+<div class="heart h2"></div>
+<div class="heart h3"></div>
+<div class="heart h4"></div>
+<div class="heart h5"></div>
+
+<div class="leaf" style="bottom:200px;"></div>
+
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maryam ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    background:pink
+    ;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    font-family:cursive;
+}
+
+/* الاسم */
+.name{
+    position:absolute;
+    top:40px;
+    font-size:45px;
+    color:#ff4d88;
+    animation:fade 2s ease-in-out;
+}
+
+.name span{
+    color:red;
+}
+
+/* الساق */
+.stem{
+    width:12px;
+    height:0;
+    background:#3b9b45;
+    position:absolute;
+    bottom:0;
+    border-radius:10px;
+    animation:grow 5s forwards;
+}
+
+@keyframes grow{
+    from{
+        height:0;
+    }
+    to{
+        height:300px;
+    }
+}
+
+/* القلوب */
+.heart{
+    position:absolute;
+    width:45px;
+    height:45px;
+    transform:rotate(-45deg) scale(0);
+    animation:bloom 1s forwards;
+}
+
+.heart:before,
+.heart:after{
+    content:"";
+    position:absolute;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+.heart:before{
+    top:-22px;
+    left:0;
+}
+
+.heart:after{
+    top:0;
+    left:22px;
+}
+
+@keyframes bloom{
+    to{
+        transform:rotate(-45deg) scale(1);
+    }
+}
+
+/* ألوان القلوب */
+.pink,
+.pink:before,
+.pink:after{
+    background:#ff4d88;
+}
+
+.red,
+.red:before,
+.red:after{
+    background:red;
+}
+
+.purple,
+.purple:before,
+.purple:after{
+    background:#9b59ff;
+}
+
+.blue,
+.blue:before,
+.blue:after{
+    background:#4da6ff;
+}
+
+
+/* قلوب صغيرة متطايرة */
+.fly{
+    position:absolute;
+    font-size:25px;
+    animation:up 5s infinite;
+}
+
+@keyframes up{
+    from{
+        bottom:0;
+        opacity:1;
+    }
+    to{
+        bottom:100%;
+        opacity:0;
+    }
+}
+{
+    .teddy{
+    position:absolute;
+    top:25px;
+    left:25px;
+    font-size:80px;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
+.teddy{
+    position:absolute;
+    top:10px;
+    left:10px;
+    font-size:180px;
+    animation:bounce 2s infinite;
+    z-index:10;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="name">
+    ❤️ love u مريومتييييي ❤️
+</div>
+
+
+<div class="stem"></div>
+
+
+<script>
+
+let colors=["pink","red","purple","blue"];
+
+setTimeout(()=>{
+
+let positions=[
+    {x:-80,y:250},
+    {x:-40,y:200},
+    {x:0,y:150},
+    {x:40,y:200},
+    {x:80,y:250},
+    {x:0,y:100}
+];
+
+
+positions.forEach((p,i)=>{
+
+let flower=document.createElement("div");
+
+flower.className="heart "+colors[i%4];
+
+flower.style.left=
+"calc(50% + "+p.x+"px)";
+
+flower.style.bottom=
+p.y+"px";
+
+flower.style.animationDelay=
+(i*0.5)+"s";
+
+document.body.appendChild(flower);
+
+});
+
+
+},5000);
+
+
+// قلوب نازلة
+setInterval(()=>{
+
+let h=document.createElement("div");
+h.className="fly";
+h.innerHTML="❤️";
+
+h.style.left=Math.random()*100+"%";
+h.style.animationDuration=
+(3+Math.random()*3)+"s";
+
+document.body.appendChild(h);
+
+
+setTimeout(()=>{
+h.remove();
+},6000);
+
+
+},500);
+
+</script>
+<div class="teddy">🧸</div>
+
+</body>
+</html>
